@@ -49,7 +49,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -212,20 +211,10 @@
             this.textBox17.Size = new System.Drawing.Size(718, 78);
             this.textBox17.TabIndex = 20;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 215);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 12);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "確認用";
-            // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox17);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
@@ -277,6 +266,5 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.Label label3;
     }
 }

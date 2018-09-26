@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace VCASJsonF
 {
     public partial class UserControl4 : UserControl
     {
         private string[] sendData = new string[16];
-        private string sendData2 ;
+        private string sendData2;
 
         public UserControl4()
         {
@@ -176,9 +177,47 @@ namespace VCASJsonF
 
         private void button1_Click(object sender, EventArgs e)
         {
+            SaveFileDialog sfd = new SaveFileDialog();
+            //はじめのファイル名を指定する
+            //はじめに「ファイル名」で表示される文字列を指定する
+            sfd.FileName = "test.json";
+            //はじめに表示されるフォルダを指定する
+            //sfd.InitialDirectory = @"C:\";
+            sfd.InitialDirectory = System.Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            //[ファイルの種類]に表示される選択肢を指定する
+            //指定しない（空の文字列）の時は、現在のディレクトリが表示される
+            sfd.Filter = "jsonファイル(*.json)|*.json|すべてのファイル(*.*)|*.*";
+            //[ファイルの種類]ではじめに選択されるものを指定する
+            //2番目の「すべてのファイル」が選択されているようにする
+            sfd.FilterIndex = 1;
+            //タイトルを設定する
+            sfd.Title = "保存先のファイルを選択してください";
+            //ダイアログボックスを閉じる前に現在のディレクトリを復元するようにする
+            sfd.RestoreDirectory = true;
+            //既に存在するファイル名を指定したとき警告する
+            //デフォルトでTrueなので指定する必要はない
+            sfd.OverwritePrompt = true;
+            //存在しないパスが指定されたとき警告を表示する
+            //デフォルトでTrueなので指定する必要はない
+            sfd.CheckPathExists = true;
 
+            //ダイアログを表示する
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                System.IO.Stream stream;
+                stream = sfd.OpenFile();
+                if (stream != null)
+                {                    
+                    //ファイルに書き込む
+                    System.IO.StreamWriter sw = new System.IO.StreamWriter(stream);
+                    sw.WriteLine("https://dobon.net");
+                    sw.WriteLine("aaaa");
+                    sw.WriteLine("iiiii");
+                    //閉じる
+                    sw.Close();
+                    stream.Close();
+                }
+            }
         }
-
-
     }
 }
