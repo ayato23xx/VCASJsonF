@@ -15,8 +15,6 @@ namespace VCASJsonF
         //ユーザーコントロールのインスタンス化
         public static UserControl1 ctr1;
         public static UserControl2 ctr2;
-        public static UserControl3 ctr3;
-        public static UserControl4 ctr4;
 
         public Form1()
         {
@@ -25,18 +23,12 @@ namespace VCASJsonF
             //newする
             ctr1 = new UserControl1();
             ctr2 = new UserControl2();
-            ctr3 = new UserControl3();
-            ctr4 = new UserControl4();
             //パネルにユーザーコントロールを貼りつける
             panel1.Controls.Add(ctr1);
             panel1.Controls.Add(ctr2);
-            panel1.Controls.Add(ctr3);
-            panel1.Controls.Add(ctr4);
             //ユーザーコントロール１だけをアクティブ化、それ以外は非アクティブ化
             ctr1.Visible = true;
             ctr2.Visible = false;
-            ctr3.Visible = false;
-            ctr4.Visible = false;
         }
 
         public static object Form1Instance { get; internal set; }
@@ -50,11 +42,16 @@ namespace VCASJsonF
         {
 
         }
-
+        //ツールのヘルプ画面を開く
         private void ツールについてToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Toolver toolver = new Toolver();
             toolver.Show();
+        }
+        //ツールを終了させる
+        private void 終了ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

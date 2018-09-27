@@ -50,24 +50,24 @@
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label2.Location = new System.Drawing.Point(100, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 16);
+            this.label2.Size = new System.Drawing.Size(43, 16);
             this.label2.TabIndex = 1;
-            this.label2.Text = "RC β1.2";
+            this.label2.Text = "β1.3";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 66);
+            this.label3.Location = new System.Drawing.Point(13, 54);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(187, 24);
+            this.label3.Size = new System.Drawing.Size(315, 36);
             this.label3.TabIndex = 2;
-            this.label3.Text = "このツールはRC（リリース候補）版です。\r\nバグ報告：";
+            this.label3.Text = "このツールはリリース版です。\r\nバグ等要望は以下のバグ報告のTwitterアドレスからお願いします。\r\nバグ報告：";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(68, 78);
+            this.linkLabel1.Location = new System.Drawing.Point(66, 78);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(162, 12);
             this.linkLabel1.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(301, 145);
+            this.ClientSize = new System.Drawing.Size(331, 106);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
