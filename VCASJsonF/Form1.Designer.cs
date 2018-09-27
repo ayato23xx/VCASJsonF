@@ -46,7 +46,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(-3, 26);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(803, 427);
+            this.panel1.Size = new System.Drawing.Size(803, 430);
             this.panel1.TabIndex = 0;
             // 
             // menuStrip1
@@ -75,24 +75,24 @@
             // 開くToolStripMenuItem
             // 
             this.開くToolStripMenuItem.Name = "開くToolStripMenuItem";
-            this.開くToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.開くToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.開くToolStripMenuItem.Text = "開く";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(98, 22);
             this.toolStripMenuItem1.Text = "保存";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(95, 6);
             // 
             // 終了ToolStripMenuItem
             // 
             this.終了ToolStripMenuItem.Name = "終了ToolStripMenuItem";
-            this.終了ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.終了ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.終了ToolStripMenuItem.Text = "終了";
             // 
             // 設定ToolStripMenuItem
@@ -106,7 +106,7 @@
             // 設定ToolStripMenuItem1
             // 
             this.設定ToolStripMenuItem1.Name = "設定ToolStripMenuItem1";
-            this.設定ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.設定ToolStripMenuItem1.Size = new System.Drawing.Size(98, 22);
             this.設定ToolStripMenuItem1.Text = "設定";
             // 
             // ヘルプToolStripMenuItem
@@ -120,7 +120,7 @@
             // ツールについてToolStripMenuItem
             // 
             this.ツールについてToolStripMenuItem.Name = "ツールについてToolStripMenuItem";
-            this.ツールについてToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ツールについてToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
             this.ツールについてToolStripMenuItem.Text = "ツールについて";
             this.ツールについてToolStripMenuItem.Click += new System.EventHandler(this.ツールについてToolStripMenuItem_Click);
             // 
@@ -128,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 462);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

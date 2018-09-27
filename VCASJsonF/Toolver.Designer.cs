@@ -50,23 +50,24 @@
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label2.Location = new System.Drawing.Point(100, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 16);
+            this.label2.Size = new System.Drawing.Size(69, 16);
             this.label2.TabIndex = 1;
-            this.label2.Text = "開発版α1.0";
+            this.label2.Text = "RC β1.2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(15, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 24);
+            this.label3.Size = new System.Drawing.Size(187, 24);
             this.label3.TabIndex = 2;
-            this.label3.Text = "このツールは開発版です。\r\nバグ報告：";
+            this.label3.Text = "このツールはRC（リリース候補）版です。\r\nバグ報告：";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(15, 100);
+            this.linkLabel1.Location = new System.Drawing.Point(68, 78);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(162, 12);
             this.linkLabel1.TabIndex = 3;

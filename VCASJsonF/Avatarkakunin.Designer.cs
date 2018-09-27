@@ -75,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(69, 23);
+            this.label2.Location = new System.Drawing.Point(67, 23);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 12);
             this.label2.TabIndex = 1;
@@ -83,7 +83,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(123, 23);
+            this.label3.Location = new System.Drawing.Point(120, 23);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 12);
             this.label3.TabIndex = 2;
@@ -91,7 +91,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(177, 23);
+            this.label4.Location = new System.Drawing.Point(174, 23);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 12);
             this.label4.TabIndex = 3;
@@ -99,7 +99,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(233, 23);
+            this.label5.Location = new System.Drawing.Point(230, 23);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 12);
             this.label5.TabIndex = 4;
@@ -107,7 +107,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(293, 23);
+            this.label6.Location = new System.Drawing.Point(290, 23);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 12);
             this.label6.TabIndex = 5;
@@ -115,7 +115,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(353, 23);
+            this.label7.Location = new System.Drawing.Point(350, 23);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 12);
             this.label7.TabIndex = 6;
@@ -123,7 +123,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(410, 23);
+            this.label8.Location = new System.Drawing.Point(407, 23);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 12);
             this.label8.TabIndex = 7;
@@ -139,7 +139,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(69, 75);
+            this.label10.Location = new System.Drawing.Point(67, 75);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 12);
             this.label10.TabIndex = 9;
@@ -147,7 +147,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(123, 75);
+            this.label11.Location = new System.Drawing.Point(120, 75);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(0, 12);
             this.label11.TabIndex = 10;
@@ -155,7 +155,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(177, 75);
+            this.label12.Location = new System.Drawing.Point(174, 75);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(0, 12);
             this.label12.TabIndex = 11;
@@ -163,7 +163,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(233, 75);
+            this.label13.Location = new System.Drawing.Point(230, 75);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(0, 12);
             this.label13.TabIndex = 12;
@@ -171,7 +171,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(293, 75);
+            this.label14.Location = new System.Drawing.Point(290, 75);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(0, 12);
             this.label14.TabIndex = 13;
@@ -179,7 +179,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(353, 75);
+            this.label15.Location = new System.Drawing.Point(350, 75);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(0, 12);
             this.label15.TabIndex = 14;
@@ -187,7 +187,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(410, 75);
+            this.label16.Location = new System.Drawing.Point(407, 75);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(0, 12);
             this.label16.TabIndex = 15;
@@ -205,7 +205,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label10, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label11, 2, 3);
@@ -260,7 +260,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(69, 2);
+            this.label18.Location = new System.Drawing.Point(67, 2);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(40, 12);
             this.label18.TabIndex = 17;
@@ -269,7 +269,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(123, 2);
+            this.label19.Location = new System.Drawing.Point(120, 2);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(40, 12);
             this.label19.TabIndex = 18;
@@ -278,7 +278,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(177, 2);
+            this.label20.Location = new System.Drawing.Point(174, 2);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(40, 12);
             this.label20.TabIndex = 19;
@@ -287,7 +287,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(233, 2);
+            this.label21.Location = new System.Drawing.Point(230, 2);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(40, 12);
             this.label21.TabIndex = 20;
@@ -296,7 +296,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(293, 2);
+            this.label22.Location = new System.Drawing.Point(290, 2);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(40, 12);
             this.label22.TabIndex = 21;
@@ -305,7 +305,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(353, 2);
+            this.label23.Location = new System.Drawing.Point(350, 2);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(40, 12);
             this.label23.TabIndex = 22;
@@ -314,7 +314,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(410, 2);
+            this.label24.Location = new System.Drawing.Point(407, 2);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(40, 12);
             this.label24.TabIndex = 23;
@@ -332,16 +332,16 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(69, 51);
+            this.label26.Location = new System.Drawing.Point(67, 51);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(46, 12);
+            this.label26.Size = new System.Drawing.Size(34, 22);
             this.label26.TabIndex = 25;
             this.label26.Text = "モデル10";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(123, 51);
+            this.label27.Location = new System.Drawing.Point(120, 51);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(46, 12);
             this.label27.TabIndex = 26;
@@ -350,7 +350,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(177, 51);
+            this.label28.Location = new System.Drawing.Point(174, 51);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(46, 12);
             this.label28.TabIndex = 27;
@@ -359,7 +359,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(233, 51);
+            this.label29.Location = new System.Drawing.Point(230, 51);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(46, 12);
             this.label29.TabIndex = 28;
@@ -368,7 +368,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(293, 51);
+            this.label30.Location = new System.Drawing.Point(290, 51);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(46, 12);
             this.label30.TabIndex = 29;
@@ -377,7 +377,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(353, 51);
+            this.label31.Location = new System.Drawing.Point(350, 51);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(46, 12);
             this.label31.TabIndex = 30;
@@ -386,7 +386,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(410, 51);
+            this.label32.Location = new System.Drawing.Point(407, 51);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(46, 12);
             this.label32.TabIndex = 31;
@@ -396,7 +396,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(493, 131);
+            this.ClientSize = new System.Drawing.Size(493, 134);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Avatarkakunin";

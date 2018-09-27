@@ -14,8 +14,6 @@ namespace VCASJsonF
     {
         //アバター格納用配列作成
         string[] Avatar = new string[16];
-        //背景画像格納用変数
-        string Haikei_H;
         //仮変数
         int txt1 = 0;
 
@@ -34,31 +32,27 @@ namespace VCASJsonF
             {
                 Avatar[avatar_L - 1] = this.Controls["textbox" + avatar_L.ToString()].Text;
             }
-            //背景画像を変数に入れる
-            Haikei_H = textBox17.Text;
-
-            UserControl4 usc4 = new UserControl4();
-            usc4.SendData = Avatar[0];
-            usc4.SendData2 = Avatar[1];
-            usc4.SendData3 = Avatar[2];
-            usc4.SendData4 = Avatar[3];
-            usc4.SendData5 = Avatar[4];
-            usc4.SendData6 = Avatar[5];
-            usc4.SendData7 = Avatar[6];
-            usc4.SendData8 = Avatar[7];
-            usc4.SendData9 = Avatar[8];
-            usc4.SendData10 = Avatar[9];
-            usc4.SendData11 = Avatar[10];
-            usc4.SendData12 = Avatar[11];
-            usc4.SendData13 = Avatar[12];
-            usc4.SendData14 = Avatar[13];
-            usc4.SendData15 = Avatar[14];
-            usc4.SendData16 = Avatar[15];
-            usc4.SendData17 = Haikei_H;
-
-            //画面遷移
+            /*
+            UserControl4 ucr4 = new UserControl4();
+            ucr4.SendData = Avatar[0];
+            ucr4.SendData2 = Avatar[1];
+            ucr4.SendData3 = Avatar[2];
+            ucr4.SendData4 = Avatar[3];
+            ucr4.SendData5 = Avatar[4];
+            ucr4.SendData6 = Avatar[5];
+            ucr4.SendData7 = Avatar[6];
+            ucr4.SendData8 = Avatar[7];
+            ucr4.SendData9 = Avatar[8];
+            ucr4.SendData10 = Avatar[9];
+            ucr4.SendData11 = Avatar[10];
+            ucr4.SendData12 = Avatar[11];
+            ucr4.SendData13 = Avatar[12];
+            ucr4.SendData14 = Avatar[13];
+            ucr4.SendData15 = Avatar[14];
+            ucr4.SendData16 = Avatar[15];
             Form1.ctr2.Visible = false;
-            Form1.ctr3.Visible = true;
+            Form1.ctr4.Visible = true;
+            */
         }
         
         //確認用
@@ -155,89 +149,6 @@ namespace VCASJsonF
                 akg.SendData16 = Avatar[15];
                 //アバター確認画面を開く
                 akg.Show();     
-        }
-
-
-        //GETSET送るメソッド
-        public string Avatar_1 {
-            set {avatar_1[0] = value;}
-            get {return Avatar_1;}
-        }
-        public string Avatar_2 {
-            set {avatar_1[1] = value;}
-            get { return Avatar_2;}
-        }
-        public string Avatar_3 {
-            set { avatar_1[2] = value; }
-            get { return Avatar_3; }
-        }
-        public string Avatar_4 {
-            set { avatar_1[3] = value; }
-            get { return Avatar_4; }
-        }
-        public string Avatar_5 {
-            set { avatar_1[4] = value; }
-            get { return Avatar_5; }
-        }
-        public string Avatar_6
-        {
-            set { avatar_1[5] = value; }
-            get { return Avatar_6; }
-        }
-        public string Avatar_7
-        {
-            set { avatar_1[6] = value; }
-            get { return Avatar_7; }
-        }
-        public string Avatar_8
-        {
-            set { avatar_1[7] = value; }
-            get { return Avatar_8; }
-        }
-        public string Avatar_9
-        {
-            set { avatar_1[8] = value; }
-            get { return Avatar_9; }
-        }
-        public string Avatar_10
-        {
-            set { avatar_1[9] = value; }
-            get { return Avatar_10; }
-        }
-        public string Avatar_11
-        {
-            set { avatar_1[10] = value; }
-            get { return Avatar_11; }
-        }
-        public string Avatar_12
-        {
-            set { avatar_1[11] = value; }
-            get { return Avatar_12; }
-        }
-        public string Avatar_13
-        {
-            set { avatar_1[12] = value; }
-            get { return Avatar_13; }
-        }
-        public string Avatar_14
-        {
-            set { avatar_1[13] = value; }
-            get { return Avatar_14; }
-        }
-        public string Avatar_15
-        {
-            set { avatar_1[14] = value; }
-            get { return Avatar_15; }
-        }
-        public string Avatar_16
-        {
-            set { avatar_1[15] = value; }
-            get { return Avatar_16; }
-        }
-        public string Haikei
-        {
-            set { Haikei_H = value; }
-            get { return Haikei; }
         }
     }
 }

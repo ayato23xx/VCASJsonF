@@ -14,7 +14,10 @@ namespace VCASJsonF
     public partial class UserControl4 : UserControl
     {
         private string[] sendData = new string[16];
+        string[] Avatar = new string[16];//渡されたアバターを格納する配列
+       public string testa;
         private string sendData2;
+        string str = "\""; //2重引用符
 
         public UserControl4()
         {
@@ -26,9 +29,6 @@ namespace VCASJsonF
             set
             {
                 sendData[0] = value;
-                //label1.Text = sendData[0];
-                Console.WriteLine(sendData[0]);
-
             }
         }
         public string SendData2
@@ -36,8 +36,6 @@ namespace VCASJsonF
             set
             {
                 sendData[1] = value;
-                //label2.Text = sendData[1];
-                Console.WriteLine(sendData[1]);
             }
         }
         public string SendData3
@@ -45,8 +43,6 @@ namespace VCASJsonF
             set
             {
                 sendData[2] = value;
-                //label3.Text = sendData[2];
-                Console.WriteLine(sendData[2]);
             }
         }
         public string SendData4
@@ -54,8 +50,6 @@ namespace VCASJsonF
             set
             {
                 sendData[3] = value;
-                //label4.Text = sendData[3];
-                Console.WriteLine(sendData[3]);
             }
         }
         public string SendData5
@@ -63,8 +57,6 @@ namespace VCASJsonF
             set
             {
                 sendData[4] = value;
-                //label5.Text = sendData[4];
-                Console.WriteLine(sendData[4]);
             }
         }
         public string SendData6
@@ -72,8 +64,6 @@ namespace VCASJsonF
             set
             {
                 sendData[5] = value;
-                //label6.Text = sendData[5];
-                Console.WriteLine(sendData[5]);
             }
         }
         public string SendData7
@@ -81,8 +71,6 @@ namespace VCASJsonF
             set
             {
                 sendData[6] = value;
-                //label7.Text = sendData[6];
-                Console.WriteLine(sendData[6]);
             }
         }
         public string SendData8
@@ -90,8 +78,6 @@ namespace VCASJsonF
             set
             {
                 sendData[7] = value;
-                //label8.Text = sendData[7];
-                Console.WriteLine(sendData[7]);
             }
         }
         public string SendData9
@@ -99,8 +85,6 @@ namespace VCASJsonF
             set
             {
                 sendData[8] = value;
-                //label9.Text = sendData[8];
-                Console.WriteLine(sendData[8]);
             }
         }
         public string SendData10
@@ -108,8 +92,6 @@ namespace VCASJsonF
             set
             {
                 sendData[9] = value;
-                //label10.Text = sendData[9];
-                Console.WriteLine(sendData[9]);
             }
         }
         public string SendData11
@@ -117,8 +99,6 @@ namespace VCASJsonF
             set
             {
                 sendData[10] = value;
-                //label11.Text = sendData[10];
-                Console.WriteLine(sendData[10]);
             }
         }
         public string SendData12
@@ -126,8 +106,6 @@ namespace VCASJsonF
             set
             {
                 sendData[11] = value;
-                //label12.Text = sendData[11];
-                Console.WriteLine(sendData[11]);
             }
         }
         public string SendData13
@@ -135,8 +113,6 @@ namespace VCASJsonF
             set
             {
                 sendData[12] = value;
-                //label13.Text = sendData[12];
-                Console.WriteLine(sendData[12]);
             }
         }
         public string SendData14
@@ -144,8 +120,6 @@ namespace VCASJsonF
             set
             {
                 sendData[13] = value;
-                //label14.Text = sendData[13];
-                Console.WriteLine(sendData[13]);
             }
         }
         public string SendData15
@@ -153,8 +127,6 @@ namespace VCASJsonF
             set
             {
                 sendData[14] = value;
-                //label15.Text = sendData[14];
-                Console.WriteLine(sendData[14]);
             }
         }
         public string SendData16
@@ -162,8 +134,6 @@ namespace VCASJsonF
             set
             {
                 sendData[15] = value;
-                //label16.Text = sendData[15];
-                Console.WriteLine(sendData[15]);
             }
         }
         public string SendData17
@@ -171,16 +141,18 @@ namespace VCASJsonF
             set
             {
                 sendData2 = value;
-                Console.WriteLine(sendData2);
             }
+            get { return SendData17; }
         }
 
+        
         private void button1_Click(object sender, EventArgs e)
         {
+            Console.WriteLine(sendData[0]);
             SaveFileDialog sfd = new SaveFileDialog();
             //はじめのファイル名を指定する
             //はじめに「ファイル名」で表示される文字列を指定する
-            sfd.FileName = "test.json";
+            sfd.FileName = "config.json";
             //はじめに表示されるフォルダを指定する
             //sfd.InitialDirectory = @"C:\";
             sfd.InitialDirectory = System.Environment.GetFolderPath(Environment.SpecialFolder.Personal);
@@ -210,9 +182,35 @@ namespace VCASJsonF
                 {                    
                     //ファイルに書き込む
                     System.IO.StreamWriter sw = new System.IO.StreamWriter(stream);
-                    sw.WriteLine("https://dobon.net");
-                    sw.WriteLine("aaaa");
-                    sw.WriteLine("iiiii");
+                    sw.WriteLine("{");
+                    sw.WriteLine("  "+str+"niconico"+str+":{");
+                    //アバター出力
+                    sw.WriteLine("      "+str+ "character_models"+str+":[");
+                    //アバター情報はここに書く
+                    sw.WriteLine(sendData[0]);
+                    sw.WriteLine("      ]");
+                    sw.WriteLine("  },");
+                    //背景画像出力
+                    sw.WriteLine("  "+str+"panorama"+str+":{");
+                    sw.WriteLine("      "+str+"urls"+str+":[");
+                    //ここに背景画像を書く
+                    sw.WriteLine("      ]");
+                    sw.WriteLine("  },");
+                    //ホワイトボード用画像出力
+                    sw.WriteLine("  "+str+ "whiteboard"+str+":{");
+                    sw.WriteLine("      "+str+"urls"+str+":[");
+                    //ここにホワイトボード用画像を書く
+                    sw.WriteLine("      ]");
+                    sw.WriteLine("  },");
+                    //カンペ用画像出力
+                    sw.WriteLine("  "+str+ "cue_card"+str+":{");
+                    sw.WriteLine("      "+str+"urls"+str+":[");
+                    //ここにカンペ用画像を書く
+                    sw.WriteLine("      ]");
+                    sw.WriteLine("  }");
+
+
+                    sw.WriteLine("}");
                     //閉じる
                     sw.Close();
                     stream.Close();
