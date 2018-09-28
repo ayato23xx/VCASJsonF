@@ -14,8 +14,6 @@ namespace VCASJsonF
     {
         //アバター格納用配列作成
         string[] Avatar = new string[16];
-        //仮変数
-        int txt1 = 0;
         string str = "\""; //2重引用符
         int ava_L = 0;//アバターを数える変数
         int ava_L2 = 0;//アバターループで回す変数
@@ -140,72 +138,6 @@ namespace VCASJsonF
             {
                 Avatar[avatarLoop - 1] = this.Controls["textbox" + avatarLoop.ToString()].Text;
             }
-            //エラーチェック
-            if (int.TryParse(textBox1.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。","メッセージ");
-            }
-            else if (int.TryParse(textBox2.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox3.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox4.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox5.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox6.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox7.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox8.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox9.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox10.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox11.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox12.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox13.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox14.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox15.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-            else if (int.TryParse(textBox16.Text, out txt1) == false)
-            {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
-            }
-
                 Avatarkakunin akg = new Avatarkakunin();
                 akg.SendData = Avatar[0];
                 akg.SendData2 = Avatar[1];
@@ -225,6 +157,16 @@ namespace VCASJsonF
                 akg.SendData16 = Avatar[15];
                 //アバター確認画面を開く
                 akg.Show();     
+        }
+
+        //アバター入力欄の入力チェック（数値のみ許可）
+        private void TextBox1(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar<'0'||'9'<e.KeyChar)
+            {
+                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
+                e.Handled = true;
+            }
         }
     }
 }
