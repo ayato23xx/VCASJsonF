@@ -50,9 +50,9 @@
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label2.Location = new System.Drawing.Point(100, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 16);
+            this.label2.Size = new System.Drawing.Size(68, 16);
             this.label2.TabIndex = 1;
-            this.label2.Text = "β1.3";
+            this.label2.Text = "バージョン";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3

@@ -145,5 +145,11 @@ namespace VCASJsonF
                 label16.Text = sendData[15];
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string test_Str = sendData[0];
+            //MessageBox.Show(test_Str);
+        }
     }
 }

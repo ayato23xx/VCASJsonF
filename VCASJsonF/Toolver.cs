@@ -16,12 +16,18 @@ namespace VCASJsonF
         {
             InitializeComponent();
         }
+        string var_Str;
 
         private void Toolver_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            System.Diagnostics.FileVersionInfo var = 
+                System.Diagnostics.FileVersionInfo.GetVersionInfo(System.Reflection.Assembly.GetEntryAssembly().Location);
+            //MessageBox.Show(var_Str = var.FileVersion);
+            var_Str = var.FileVersion;
+            label2.Text = var_Str;
         }
-
+        
         private void label2_Click(object sender, EventArgs e)
         {
 

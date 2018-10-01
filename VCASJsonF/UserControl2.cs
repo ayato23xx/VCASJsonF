@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace VCASJsonF
 {
@@ -20,9 +21,12 @@ namespace VCASJsonF
         int haikei_L = 0;//背景を数える変数
         int Whbd_L = 0;//ホワイトボード用画像を数える変数
         int cucd = 0; //カンペ用画像を数える変数
+        //読込昨日で使う変数・配列一覧//
+
 
         //SETGETに送るデータ格納配列
         private string[] avatar_1 = new string[16];
+        private string mDefaultDirectory;
 
         public UserControl2()
         {
@@ -119,9 +123,39 @@ namespace VCASJsonF
                     }
                     sw.WriteLine("          "+str+cubd_Str[cucd]+str);
                     sw.WriteLine("      ]");
-                    sw.WriteLine("  }");
-
-
+                    sw.WriteLine("  },");
+                    //その他設定項目
+                    //ダイレクトビューモード
+                    if (checkBox3.Checked)
+                    {
+                        if (checkBox1.Checked || checkBox2.Checked)
+                        {
+                            sw.WriteLine("  \"mode\": \"direct-view\",");
+                        }
+                        else
+                        {
+                            sw.WriteLine("  \"mode\": \"direct-view\"");
+                        }
+                        
+                    }
+                    //ダイレクトビューでの凸許可
+                    if (checkBox1.Checked)
+                    {
+                        if (checkBox2.Checked)
+                        {
+                            sw.WriteLine("  \"allow_direct_view\": true,");
+                        }
+                        else
+                        {
+                            sw.WriteLine("  \"allow_direct_view\": true");
+                        }
+                        
+                    }
+                    //カメラ非表示
+                    if (checkBox2.Checked)
+                    {
+                        sw.WriteLine("  \"hide_camera_from_viewers\": true");
+                    }
                     sw.WriteLine("}");
                     //閉じる
                     sw.Close();
@@ -166,6 +200,95 @@ namespace VCASJsonF
             {
                 MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
                 e.Handled = true;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //ファイル読込
+            OpenFileDialog ofd = new OpenFileDialog();
+            //ofd.FileName = "config.json";
+            ofd.InitialDirectory = System.Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            ofd.Filter = "JSONファイル(*.json)|*.json|すべてのファイル(*.*)|*.*";
+            ofd.FilterIndex = 1;
+            ofd.Title = "開くファイルを選択してください。";
+            ofd.RestoreDirectory = true;
+            ofd.CheckFileExists = true;
+            ofd.CheckPathExists = true;
+
+            //ファイルを読み込んだ時の処理
+            if (ofd.ShowDialog()==DialogResult.OK)
+            {
+                Stream stream = ofd.OpenFile();
+                //ファイルパスを保存
+                string OPFName = ofd.FileName;
+                if (stream != null)
+                {
+                    System.IO.StreamReader sr = new System.IO.StreamReader(stream);
+                    System.Text.Encoding enc = System.Text.Encoding.GetEncoding("UTF-8");
+                    //各種変数宣言
+                    string textFile = OPFName;
+                    string Input_Str = System.IO.File.ReadAllText(textFile, enc);
+                    string[] Input_Str_Enc = Input_Str.Split(new string[] { "\r\n" }, StringSplitOptions.None);
+                    string[] Vcas_Json = new string[0];//空白部分を省いたjsonの配列
+                    //アバター格納配列
+                    string[] Ava_Str = new string[0];
+                    string[] Ava_Str2 = { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
+
+                    //アバターCount配列
+                    int Ava_Count = 0;
+
+                    //余計な空白を省いて別配列に入れる
+                    for (int i = 0; i < Input_Str_Enc.Length; i++)
+                    {
+                        Array.Resize(ref Vcas_Json, i + 1);
+                        Vcas_Json[i] = Input_Str_Enc[i].Trim();
+                        Console.WriteLine(Vcas_Json[i]);
+                    }
+                    for (int i=3;i<Vcas_Json.Length&&Vcas_Json[i]!="]";i++)
+                    {
+                        Array.Resize(ref Ava_Str, i + 1);
+                        Ava_Str[i] = Vcas_Json[i];
+                    }
+                    for (int i = 3; i<Ava_Str.Length && Ava_Str[i] != "]"; i++)
+                    {
+                        if (Ava_Count < 16)
+                        {
+                            Ava_Str2[i] = Ava_Str[i].Replace(",", "");
+                            Console.WriteLine(Ava_Str2[i]);
+                        }
+                        else
+                        {
+                            Array.Resize(ref Ava_Str2,i+1);
+                            Ava_Str2[i] = Ava_Str[i];
+                            Console.WriteLine(Ava_Str2[i]);
+                        }
+                        Ava_Count++;
+                    }
+                    Console.WriteLine(Ava_Count);
+                    //Importしたアバターをテキストボックスに表示する（16体）
+                    textBox1.Text = Ava_Str2[3];
+                    textBox2.Text = Ava_Str2[4];
+                    textBox3.Text = Ava_Str2[5];
+                    textBox4.Text = Ava_Str2[6];
+                    textBox5.Text = Ava_Str2[7];
+                    textBox6.Text = Ava_Str2[8];
+                    textBox7.Text = Ava_Str2[9];
+                    textBox8.Text = Ava_Str2[10];
+                    textBox9.Text = Ava_Str2[11];
+                    textBox10.Text = Ava_Str2[12];
+                    textBox11.Text = Ava_Str2[13];
+                    textBox12.Text = Ava_Str2[14];
+                    textBox13.Text = Ava_Str2[15];
+                    textBox14.Text = Ava_Str2[16];
+                    textBox15.Text = Ava_Str2[17];
+                    textBox16.Text = Ava_Str2[18];
+                    //デバック処理
+                    MessageBox.Show("ファイルを読み込みました。","メッセージ");
+                    //閉じる処理
+                    sr.Close();
+                }
+                stream.Close();                
             }
         }
     }

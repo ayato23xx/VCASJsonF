@@ -53,6 +53,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -206,9 +211,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(593, 311);
+            this.button2.Location = new System.Drawing.Point(683, 311);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 84);
+            this.button2.Size = new System.Drawing.Size(75, 84);
             this.button2.TabIndex = 18;
             this.button2.Text = "ファイル出力";
             this.button2.UseVisualStyleBackColor = true;
@@ -268,10 +273,69 @@
             this.label4.TabIndex = 24;
             this.label4.Text = "ホワイトボード用画像入力欄";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("MS UI Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkBox1.Location = new System.Drawing.Point(408, 351);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(171, 18);
+            this.checkBox1.TabIndex = 27;
+            this.checkBox1.Text = "ダイレクトビューでの凸許可";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("MS UI Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkBox2.Location = new System.Drawing.Point(408, 375);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(98, 18);
+            this.checkBox2.TabIndex = 28;
+            this.checkBox2.Text = "カメラ非表示";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label5.Location = new System.Drawing.Point(404, 289);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(101, 19);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "その他設定";
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("MS UI Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.checkBox3.Location = new System.Drawing.Point(408, 329);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(139, 18);
+            this.checkBox3.TabIndex = 30;
+            this.checkBox3.Text = "ダイレクトビューモード";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button3.Location = new System.Drawing.Point(593, 311);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 82);
+            this.button3.TabIndex = 31;
+            this.button3.Text = "ファイル読込";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox19);
             this.Controls.Add(this.label3);
@@ -331,5 +395,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.Button button3;
     }
 }
