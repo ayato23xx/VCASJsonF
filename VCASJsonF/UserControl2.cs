@@ -57,8 +57,17 @@ namespace VCASJsonF
             for (ava_L = 0;ava_L<=15 && Avatar[ava_L]!="";ava_L++) { }
             ava_L2 = ava_L - 1;
             //入力された背景の数を数える
+            //背景モデル
+            string[] haikei_Model_Str = textBox20.Text.Split(new string[] { "\r\n" }, StringSplitOptions.None);
+            //視聴者に見せる画像
+            string[] Img_Show_Str = textBox21.Text.Split(new string[] { "\r\n" }, StringSplitOptions.None);
+            //視聴者に見せない画像
+            string[] Img_Hide_Str = textBox22.Text.Split(new string[] { "\r\n" }, StringSplitOptions.None);
+                //背景用画像
             string[] haikei_Str = textBox17.Text.Split(new string[] { "\r\n" },StringSplitOptions.None);
+                //ホワイトボード画像
             string[] whbd_Str = textBox18.Text.Split(new string[] { "\r\n" }, StringSplitOptions.None);
+                //カンペ用画像
             string[] cubd_Str = textBox19.Text.Split(new string[] { "\r\n" }, StringSplitOptions.None);
             //ファイル出力
             SaveFileDialog sfd = new SaveFileDialog();
@@ -83,12 +92,16 @@ namespace VCASJsonF
                     sw.WriteLine("  " + str + "niconico" + str + ":{");
                     //アバター出力
                     sw.WriteLine("      " + str + "character_models" + str + ":[");
-                    //アバター情報はここに書く
+                    //アバター情報はここに書く//
                     for (ava_L=0;ava_L<ava_L2;ava_L++)
                     {
                         sw.WriteLine("          "+Avatar[ava_L]+",");
                     }
                     sw.WriteLine("          "+Avatar[ava_L]);
+                    sw.WriteLine("      ]");
+                    //背景モデル出力
+                    sw.WriteLine("      "+str+ "background_models"+str+":[");
+                    //背景モデル情報はここに書く//
                     sw.WriteLine("      ]");
                     sw.WriteLine("  },");
                     //背景画像出力
@@ -105,7 +118,7 @@ namespace VCASJsonF
                     //ホワイトボード用画像出力
                     sw.WriteLine("  " + str + "whiteboard" + str + ":{");
                     sw.WriteLine("      " + str + "urls" + str + ":[");
-                    //ここにホワイトボード用画像を書く
+                    //ここにホワイトボード用画像を書く//
                     for (Whbd_L=0;Whbd_L<whbd_Str.Length-1;Whbd_L++)
                     {
                         sw.WriteLine("          "+str+whbd_Str[Whbd_L]+str+",");
@@ -116,7 +129,7 @@ namespace VCASJsonF
                     //カンペ用画像出力
                     sw.WriteLine("  " + str + "cue_card" + str + ":{");
                     sw.WriteLine("      " + str + "urls" + str + ":[");
-                    //ここにカンペ用画像を書く
+                    //ここにカンペ用画像を書く//
                     for (cucd=0;cucd<cubd_Str.Length-1;cucd++)
                     {
                         sw.WriteLine("          "+str+cubd_Str[cucd]+str+",");

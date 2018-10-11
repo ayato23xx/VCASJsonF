@@ -58,6 +58,12 @@
             this.label5 = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -211,9 +217,9 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(683, 311);
+            this.button2.Location = new System.Drawing.Point(604, 511);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 84);
+            this.button2.Size = new System.Drawing.Size(153, 76);
             this.button2.TabIndex = 18;
             this.button2.Text = "ファイル出力";
             this.button2.UseVisualStyleBackColor = true;
@@ -223,7 +229,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(38, 171);
+            this.label2.Location = new System.Drawing.Point(415, 282);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 19);
             this.label2.TabIndex = 19;
@@ -231,15 +237,15 @@
             // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(40, 193);
+            this.textBox17.Location = new System.Drawing.Point(419, 304);
             this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(350, 78);
+            this.textBox17.Size = new System.Drawing.Size(338, 78);
             this.textBox17.TabIndex = 20;
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(408, 193);
+            this.textBox18.Location = new System.Drawing.Point(51, 407);
             this.textBox18.Multiline = true;
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(350, 78);
@@ -249,7 +255,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(38, 289);
+            this.label3.Location = new System.Drawing.Point(415, 385);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(176, 19);
             this.label3.TabIndex = 22;
@@ -257,17 +263,17 @@
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(42, 311);
+            this.textBox19.Location = new System.Drawing.Point(419, 407);
             this.textBox19.Multiline = true;
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(350, 84);
+            this.textBox19.Size = new System.Drawing.Size(338, 78);
             this.textBox19.TabIndex = 23;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(404, 171);
+            this.label4.Location = new System.Drawing.Point(49, 385);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(239, 19);
             this.label4.TabIndex = 24;
@@ -277,7 +283,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("MS UI Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.checkBox1.Location = new System.Drawing.Point(408, 351);
+            this.checkBox1.Location = new System.Drawing.Point(53, 564);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(171, 18);
             this.checkBox1.TabIndex = 27;
@@ -288,7 +294,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("MS UI Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.checkBox2.Location = new System.Drawing.Point(408, 375);
+            this.checkBox2.Location = new System.Drawing.Point(53, 588);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(98, 18);
             this.checkBox2.TabIndex = 28;
@@ -299,7 +305,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(404, 289);
+            this.label5.Location = new System.Drawing.Point(49, 505);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 19);
             this.label5.TabIndex = 29;
@@ -309,7 +315,7 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("MS UI Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.checkBox3.Location = new System.Drawing.Point(408, 329);
+            this.checkBox3.Location = new System.Drawing.Point(53, 542);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(139, 18);
             this.checkBox3.TabIndex = 30;
@@ -319,18 +325,78 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(593, 311);
+            this.button3.Location = new System.Drawing.Point(419, 511);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 82);
+            this.button3.Size = new System.Drawing.Size(165, 76);
             this.button3.TabIndex = 31;
             this.button3.Text = "ファイル読込";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(51, 195);
+            this.textBox20.Multiline = true;
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(350, 84);
+            this.textBox20.TabIndex = 32;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Location = new System.Drawing.Point(419, 195);
+            this.textBox21.Multiline = true;
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(338, 84);
+            this.textBox21.TabIndex = 33;
+            // 
+            // textBox22
+            // 
+            this.textBox22.Location = new System.Drawing.Point(51, 304);
+            this.textBox22.Multiline = true;
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(350, 78);
+            this.textBox22.TabIndex = 34;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label6.Location = new System.Drawing.Point(52, 173);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 19);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "背景モデル";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label7.Location = new System.Drawing.Point(415, 173);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(217, 19);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "視聴者に見せる固定画像";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label8.Location = new System.Drawing.Point(52, 282);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(236, 19);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "視聴者に見せない固定画像";
+            // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox22);
+            this.Controls.Add(this.textBox21);
+            this.Controls.Add(this.textBox20);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.label5);
@@ -362,7 +428,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(800, 425);
+            this.Size = new System.Drawing.Size(800, 620);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -400,5 +466,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
