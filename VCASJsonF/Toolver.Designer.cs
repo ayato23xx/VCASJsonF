@@ -58,11 +58,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 54);
+            this.label3.Location = new System.Drawing.Point(12, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(315, 36);
+            this.label3.Size = new System.Drawing.Size(315, 48);
             this.label3.TabIndex = 2;
-            this.label3.Text = "このツールはリリース版です。\r\nバグ等要望は以下のバグ報告のTwitterアドレスからお願いします。\r\nバグ報告：";
+            this.label3.Text = "このツールはリリース版です。\r\nバーチャルキャスト【バージョン1.4.0a】に対応しています。\r\nバグ等要望は以下のバグ報告のTwitterアドレスからお願いしま" +
+    "す。\r\nバグ報告：";
             // 
             // linkLabel1
             // 

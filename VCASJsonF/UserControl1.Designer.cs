@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,7 +39,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(302, 383);
+            this.button1.Location = new System.Drawing.Point(299, 425);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 99);
             this.button1.TabIndex = 0;
@@ -71,16 +72,15 @@
             this.textBox1.Location = new System.Drawing.Point(169, 248);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(458, 97);
+            this.textBox1.Size = new System.Drawing.Size(458, 129);
             this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "１、作成開始ボタンを押します。\r\n２、ニコニ立体から取得した数字を入力欄に入力します。\r\n３、背景画像を入力欄にURLで入力します。\r\n４、ホワイトボード用画像を" +
-    "入力欄にURLで入力欄します。\r\n５、カンペ用画像を入力欄にURLで入力します。\r\n６、保存先を指定します。\r\n７．保存ボタンを押します。";
+            this.textBox1.Text = resources.GetString("textBox1.Text");
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(167, 202);
+            this.label3.Location = new System.Drawing.Point(167, 233);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 4;

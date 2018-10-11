@@ -21,6 +21,10 @@ namespace VCASJsonF
         int haikei_L = 0;//背景を数える変数
         int Whbd_L = 0;//ホワイトボード用画像を数える変数
         int cucd = 0; //カンペ用画像を数える変数
+
+        int haikei_Model_L = 0; //背景モデルを数える変数
+        int Img_Show_L = 0; //固定画像を数える変数１
+        int Img_Hide_L = 0; //固定画像を数える変数２
         //読込昨日で使う変数・配列一覧//
 
 
@@ -98,10 +102,36 @@ namespace VCASJsonF
                         sw.WriteLine("          "+Avatar[ava_L]+",");
                     }
                     sw.WriteLine("          "+Avatar[ava_L]);
-                    sw.WriteLine("      ]");
+                    sw.WriteLine("      ],");
                     //背景モデル出力
                     sw.WriteLine("      "+str+ "background_models"+str+":[");
                     //背景モデル情報はここに書く//
+                    for (haikei_Model_L = 0; haikei_Model_L < haikei_Model_Str.Length-1; haikei_Model_L++)
+                    {
+                        sw.WriteLine("          "+haikei_Model_Str[haikei_Model_L]+",");
+                    }
+                    sw.WriteLine("          "+haikei_Model_Str[haikei_Model_L]);
+                    sw.WriteLine("      ]");
+                    sw.WriteLine("  },");
+                    //固定画像出力
+                    //視聴者に見せる固定画像出力
+                    sw.WriteLine("  "+str+ "persistent_object"+str+":{");
+                    sw.WriteLine("      "+str+ "image_urls"+str+":[");
+                    //固定画像ー視聴者に見せるはここに書く//
+                    for (Img_Show_L = 0; Img_Show_L < Img_Show_Str.Length - 1; Img_Show_L++)
+                    {
+                        sw.WriteLine("          "+str+Img_Show_Str[Img_Show_L]+str+",");
+                    }
+                    sw.WriteLine("          "+str+Img_Show_Str[Img_Show_L]+str);
+                    sw.WriteLine("      ],");
+                    //視聴者に見せない固定画像出力
+                    sw.WriteLine("      "+str+ "hidden_image_urls"+str+":[");
+                    //固定画像ー視聴者に見せないはここに書く//
+                    for (Img_Hide_L = 0; Img_Hide_L < Img_Hide_Str.Length - 1; Img_Hide_L++)
+                    {
+                        sw.WriteLine("          "+str+Img_Hide_Str[Img_Hide_L]+str+",");
+                    }
+                    sw.WriteLine("          "+str+Img_Hide_Str[Img_Hide_L]+str);
                     sw.WriteLine("      ]");
                     sw.WriteLine("  },");
                     //背景画像出力
@@ -136,38 +166,55 @@ namespace VCASJsonF
                     }
                     sw.WriteLine("          "+str+cubd_Str[cucd]+str);
                     sw.WriteLine("      ]");
-                    sw.WriteLine("  },");
+                    //sw.WriteLine("  }");
                     //その他設定項目
+                    if (checkBox1.Checked || checkBox2.Checked || checkBox3.Checked)
+                    {}
+                    else
+                    {
+                        sw.WriteLine("  }");
+                    }
                     //ダイレクトビューモード
                     if (checkBox3.Checked)
                     {
                         if (checkBox1.Checked || checkBox2.Checked)
                         {
+
+                            sw.WriteLine("  },");
                             sw.WriteLine("  \"mode\": \"direct-view\",");
                         }
                         else
                         {
+                            sw.WriteLine("  },");
                             sw.WriteLine("  \"mode\": \"direct-view\"");
-                        }
-                        
+                        }                        
                     }
                     //ダイレクトビューでの凸許可
                     if (checkBox1.Checked)
                     {
                         if (checkBox2.Checked)
                         {
+                            sw.WriteLine("  },");
                             sw.WriteLine("  \"allow_direct_view\": true,");
                         }
                         else
                         {
+                            sw.WriteLine("  },");
                             sw.WriteLine("  \"allow_direct_view\": true");
-                        }
-                        
+                        }                        
                     }
                     //カメラ非表示
                     if (checkBox2.Checked)
                     {
-                        sw.WriteLine("  \"hide_camera_from_viewers\": true");
+                        if (checkBox1.Checked)
+                        {
+                            sw.WriteLine("  \"hide_camera_from_viewers\": true");
+                        }
+                        else
+                        {
+                            sw.WriteLine("  },");
+                            sw.WriteLine("  \"hide_camera_from_viewers\": true");
+                        }
                     }
                     sw.WriteLine("}");
                     //閉じる
