@@ -258,7 +258,7 @@ namespace VCASJsonF
         {
             if (e.KeyChar<'0'||'9'<e.KeyChar)
             {
-                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtsは不要です。", "メッセージ");
+                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtdは不要です。", "メッセージ");
                 e.Handled = true;
             }
         }
@@ -350,6 +350,32 @@ namespace VCASJsonF
                 }
                 stream.Close();                
             }
+        }
+
+        private void Texthaikei(object sender, KeyPressEventArgs e)
+        {
+            haike_noko_cou.Text = "現在"+textBox20.Lines.Length.ToString()+"モデル入力されています。";
+            if (textBox20.Lines.Length >16)
+            {
+                haike_noko_cou.ForeColor = Color.Red;
+            
+                haike_noko_cou.Text = "現在" + textBox20.Lines.Length.ToString() + "モデル入力されています。";
+                MessageBox.Show("モデルIDが16以上入力されました。VirtualCastでは17モデル以上認識しませんが実行しますか？","メッセージ");
+            }
+            if ((e.KeyChar < '0' || '9' < e.KeyChar) && e.KeyChar != (char)Keys.Enter && e.KeyChar != '\b')
+            {
+                MessageBox.Show("入力できるのは数字のみです。\n\rURLのtdは不要です。", "メッセージ");
+                e.Handled = true;
+            }           
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserControl2_Load(object sender, EventArgs e)
+        {
         }
     }
 }

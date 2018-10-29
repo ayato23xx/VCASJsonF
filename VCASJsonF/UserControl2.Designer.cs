@@ -64,6 +64,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.haike_noko_cou = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -217,7 +219,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(604, 511);
+            this.button2.Location = new System.Drawing.Point(612, 668);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(153, 76);
             this.button2.TabIndex = 18;
@@ -229,7 +231,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(415, 282);
+            this.label2.Location = new System.Drawing.Point(420, 450);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(169, 19);
             this.label2.TabIndex = 19;
@@ -237,7 +239,7 @@
             // 
             // textBox17
             // 
-            this.textBox17.Location = new System.Drawing.Point(419, 304);
+            this.textBox17.Location = new System.Drawing.Point(424, 472);
             this.textBox17.Multiline = true;
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(338, 78);
@@ -245,7 +247,7 @@
             // 
             // textBox18
             // 
-            this.textBox18.Location = new System.Drawing.Point(51, 407);
+            this.textBox18.Location = new System.Drawing.Point(56, 473);
             this.textBox18.Multiline = true;
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(350, 78);
@@ -255,7 +257,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(415, 385);
+            this.label3.Location = new System.Drawing.Point(420, 553);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(176, 19);
             this.label3.TabIndex = 22;
@@ -263,7 +265,7 @@
             // 
             // textBox19
             // 
-            this.textBox19.Location = new System.Drawing.Point(419, 407);
+            this.textBox19.Location = new System.Drawing.Point(424, 575);
             this.textBox19.Multiline = true;
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(338, 78);
@@ -273,7 +275,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label4.Location = new System.Drawing.Point(49, 385);
+            this.label4.Location = new System.Drawing.Point(52, 451);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(239, 19);
             this.label4.TabIndex = 24;
@@ -283,7 +285,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("MS UI Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.checkBox1.Location = new System.Drawing.Point(53, 564);
+            this.checkBox1.Location = new System.Drawing.Point(61, 721);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(171, 18);
             this.checkBox1.TabIndex = 27;
@@ -294,7 +296,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("MS UI Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.checkBox2.Location = new System.Drawing.Point(53, 588);
+            this.checkBox2.Location = new System.Drawing.Point(61, 745);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(98, 18);
             this.checkBox2.TabIndex = 28;
@@ -305,7 +307,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label5.Location = new System.Drawing.Point(49, 505);
+            this.label5.Location = new System.Drawing.Point(57, 662);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 19);
             this.label5.TabIndex = 29;
@@ -315,7 +317,7 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("MS UI Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.checkBox3.Location = new System.Drawing.Point(53, 542);
+            this.checkBox3.Location = new System.Drawing.Point(61, 699);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(139, 18);
             this.checkBox3.TabIndex = 30;
@@ -325,7 +327,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(419, 511);
+            this.button3.Location = new System.Drawing.Point(427, 668);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(165, 76);
             this.button3.TabIndex = 31;
@@ -335,15 +337,16 @@
             // 
             // textBox20
             // 
-            this.textBox20.Location = new System.Drawing.Point(51, 195);
+            this.textBox20.Location = new System.Drawing.Point(56, 195);
             this.textBox20.Multiline = true;
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(350, 84);
+            this.textBox20.Size = new System.Drawing.Size(702, 84);
             this.textBox20.TabIndex = 32;
+            this.textBox20.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Texthaikei);
             // 
             // textBox21
             // 
-            this.textBox21.Location = new System.Drawing.Point(419, 195);
+            this.textBox21.Location = new System.Drawing.Point(56, 364);
             this.textBox21.Multiline = true;
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(338, 84);
@@ -351,7 +354,7 @@
             // 
             // textBox22
             // 
-            this.textBox22.Location = new System.Drawing.Point(51, 304);
+            this.textBox22.Location = new System.Drawing.Point(419, 364);
             this.textBox22.Multiline = true;
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(350, 78);
@@ -371,7 +374,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label7.Location = new System.Drawing.Point(415, 173);
+            this.label7.Location = new System.Drawing.Point(52, 342);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(217, 19);
             this.label7.TabIndex = 36;
@@ -381,16 +384,38 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("MS UI Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label8.Location = new System.Drawing.Point(52, 282);
+            this.label8.Location = new System.Drawing.Point(420, 342);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(236, 19);
             this.label8.TabIndex = 37;
             this.label8.Text = "視聴者に見せない固定画像";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(298, 699);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 38;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // haike_noko_cou
+            // 
+            this.haike_noko_cou.AutoSize = true;
+            this.haike_noko_cou.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.haike_noko_cou.Location = new System.Drawing.Point(590, 293);
+            this.haike_noko_cou.Name = "haike_noko_cou";
+            this.haike_noko_cou.Size = new System.Drawing.Size(168, 12);
+            this.haike_noko_cou.TabIndex = 39;
+            this.haike_noko_cou.Text = "現在0モデル入力されています。";
+            // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.haike_noko_cou);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -428,7 +453,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(800, 620);
+            this.Size = new System.Drawing.Size(825, 780);
+            this.Load += new System.EventHandler(this.UserControl2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,5 +498,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label haike_noko_cou;
     }
 }
